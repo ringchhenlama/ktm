@@ -11,7 +11,7 @@
 html {
 	background-color: #fff;
 	color: #000;
-	font-family: 'Lato', 'Arial', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;     
@@ -55,19 +55,19 @@ h1, h2, h3 {
 }
 
 h1 {
-	margin-top: 0;
 	font-size: 140%;
 	color: #000;
-	margin-bottom: 20px;
+	margin: 10px 0;
 	word-spacing: 2px;
 	letter-spacing: 1px;
+	font-weight: 400;
 }
 
 h2 {
 	font-size: 120%;
 	word-spacing: 1px;
 	text-align: center;
-	margin-bottom: 30px;
+	margin: 10px 0;
 	letter-spacing: 1px;
 }
 
@@ -491,3 +491,70 @@ select {
 	font-size: 80%;
 	padding: 20px;
 }
+
+/*-------------------------------------*/
+/* SECTION ABOUT US */
+/*-------------------------------------*/
+
+.about-us {
+	width: 90%;
+	
+}
+
+.about-us p {
+	line-height: 145%;
+	font-size: 90%;
+	text-align: justify;
+}
+
+.hotel-room-forever {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.hotel-image {
+	margin-bottom: 20px;
+}
+.hotel-image figure {
+	width: 30%;
+	overflow: hidden;
+	float: left;
+	margin-right: 15px;
+}
+
+.hotel-image figure img {
+	width: 100%;
+}
+
+.hotel-image h2 a {
+	color: #1E703D;
+}
+
+/*-------------------------------------*/
+/* REVIEW US */
+/*-------------------------------------*/
+
+.review-us {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.review-us figure {
+	width: 30%;
+	height: auto;
+	overflow: hidden;
+	margin-right: 10px;
+	float: left;
+}
+
+.review-us figure img {
+	width: 100%;
+}
+
+.review-us .box {
+	background-color: #efefef;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+

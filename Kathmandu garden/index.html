@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Kathmandu Garden Home | The best restaurant in Town</title>
 		<link type="text/css" rel="stylesheet" href="vendors/css/normalize.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,300i,400" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="resources/css/style.css">
 		<link type="text/css" rel="stylesheet" href="vendors/css/col.css">
 		<link type="text/css" rel="stylesheet" href="vendors/css/2cols.css">
@@ -16,6 +16,9 @@
 		<link type="text/css" rel="stylesheet" href="vendors/css/7cols.css">
 		<link type="text/css" rel="stylesheet" href="vendors/css/8cols.css">
 		<link type="text/css" rel="stylesheet" href="vendors/css/12cols.css">
+		<script src="vendors/js/jquery-3.3.1.min.js"></script>
+		<script src="https://unpkg.com/ionicons@4.4.7/dist/ionicons.js"></script>
+
 	</head>
 	<body>
 		<div class="row">
@@ -23,56 +26,13 @@
 		</div>
 		<div class="container">
 			<header>
-				<div class="row clearfix">
-					<div class="col span_2_of_6">
-						<a href="#"><img src="resources/img/logo.png" alt="Hotel Logo" class="logo"></a>
-					</div>
-					<div class="col span_1_of_6">
-						<a href="#"><img src="resources/img/trip-advisor.png" alt="Trip Advisor Logo"></a>
-					</div> 
-					<div class="col span_2_of_6 contact-us">
-						<span>24 Hours Support :</span> +977 1-4700622, 4700623
-					</div>
-					<div class="col span_1_of_6">
-						<ul class="social-icons">
-							<li><a href="#" class="facebook"><ion-icon name="logo-facebook" title="facebook"></ion-icon></a></li>
-							<li><a href="#"><ion-icon name="logo-twitter" class="twitter" title="twitter"></ion-icon></a></li>
-							<li><a href="#"><ion-icon name="logo-googleplus" class="googleplus" title="googleplus"></ion-icon></a></li>
-							<li><a href="#"><ion-icon name="logo-instagram" class="instagram" title="instagram"></ion-icon></a></li>
-							<li><a href="#"><ion-icon name="logo-youtube" class="Youtube" title="youtube"></ion-icon></a></li>
-
-						</ul>
-					</div>
-				</div>
-				<nav>
-					<div class="row clearfix main-nav-row">
-						<div class="col span_6_of_8">
-							<ul class="main-nav">
-								<li><a href="#"><ion-icon name="home"></ion-icon></a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Rooms</a></li>
-								<li><a href="#">Reviews</a></li>
-								<li><a href="#">Tariff</a></li>
-								<li><a href="#">Gallery</a></li>
-								<li><a href="#">Inquiry</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact</a></li> 
-							</ul>
-						</div>
-						<div class="col span_2_of_8 search-panel-col">
-							<div class="search-panel">
-								<form name="search" method="post" action="#" class="search-form">
-									<input type="text" name="keyword" placeholder="Type a Keyword..." class="search-box">
-									<input type="submit" name="search" value="SEARCH" class="search-button">
-
-								</form>
-
-							</div>
-						</div>
-					</div>
-				</nav>
+				<div id="navbar-placeholder"></div>
+				<script>
+					$(function(){
+						$("#navbar-placeholder").load("navbar.html");
+					});
+				</script>
 				<div class="slider">
-					<!-- Slideshow container -->
 					<div class="slideshow-container">
 
 						<div class="mySlides fade">
@@ -93,7 +53,7 @@
 							<img src="resources/img/img5.jpg" style="width:100%">
 						</div>
 
-						<!-- Next and previous buttons -->
+						<!-- next and previous buttons -->
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 					</div>
@@ -258,64 +218,15 @@
 			</div>
 		</div>
 	</section>
-	<section class="mid-footer">
-		<div class="row clearfix">
-			<div class="col span_1_of_3">
-				<div class="first">
-					<figure class="my-logo">
-						<img src="resources/img/logo.png" title="logo photo">
-					</figure>
-					<p>Kathmandu Garden Home is not just another hotel in Kathmandu but a perfect address for travelers seeing luxury, stylish and services all withing their budget</p>
-					<p><span><ion-icon name="pin"></ion-icon></span><span class="address">Kathmandu Metropolitan City, Ward no 16, Shree Ratna Marg, Thamel, House no. 87, Kathmandu, Nepal</span></p>
-					<p><span><ion-icon name="mail"></ion-icon></span><span class="email">info@kathmandugardenhome.com</span></p>
-				</div>
-			</div>
-			<div class="col span_1_of_3">
-				<div class="second">
-					<h2>Find us on Social Media</h2>
-					<ul class="social-icons-bottom">
-						<li><a href="#" class="facebook"><ion-icon name="logo-facebook" title="facebook"></ion-icon></a></li>
-						<li><a href="#"><ion-icon name="logo-twitter" class="twitter" title="twitter"></ion-icon></a></li>
-						<li><a href="#"><ion-icon name="logo-googleplus" class="googleplus" title="googleplus"></ion-icon></a></li>
-						<li><a href="#"><ion-icon name="logo-instagram" class="instagram" title="instagram"></ion-icon></a></li>
-						<li><a href="#"><ion-icon name="logo-youtube" class="Youtube" title="youtube"></ion-icon></a></li>
-
-					</ul>
-				</div>
-				<div class="newsletter">
-					<h2>Newsletter Subscribe</h2>
-					<p>All Subscribed Viewers get daily email alert !</p>
-					<form method="post">
-						<input type="text" id="validemail" name="email" placeholder="Email" class="searchbox form-control" required>
-						<div>
-							<a href="#" class="btn btn-full">Subscribe Now</a>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="col span_1_of_3">
-				<div class="third">
-					<h3>Payment Options</h3>
-					<ul>
-						<li><a href="#"><img src="resources/img/mastercard.png"></a></li>
-						<li><a href="#"><img src="resources/img/visa.png"></a></li>
-						<li><a href="#"><img src="resources/img/maestro.png"></a></li>
-						<li><a href="#"><img src="resources/img/visaelectron.png"></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="row footer">
-			<p>Copyright &copy; 2018 Kathmandu Garden Home | All Rights Reserved. | Designed and Developed by : Llama</p>
-		</div>
-	</footer>
-
-
+	<div id="footer"></div>
+	<script>
+		$(function() {
+			$("#footer").load("footer.html");
+		})
+	</script>
 
 	</div>
-<script src="https://unpkg.com/ionicons@4.4.7/dist/ionicons.js"></script>
+
 <script type="text/javascript">
 	var slideIndex = 0;
 	showSlides();
